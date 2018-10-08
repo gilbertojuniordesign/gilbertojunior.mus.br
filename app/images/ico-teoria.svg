@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 493.5 547.22">
+  <defs>
+    <style>
+      .a {
+        fill: none;
+        stroke: #ff9e01;
+        stroke-miterlimit: 10;
+        stroke-width: 14px;
+      }
+    </style>
+  </defs>
+  <title>ico-teoria</title>
+  <path class="a" d="M7,518.6H7c0-45.25,160-78.25,160-33h0C167,530.86,7,563.86,7,518.6Z"/>
+  <path class="a" d="M326.5,452.6h0c0-45.25,160-78.25,160-33h0C486.5,464.86,326.5,497.86,326.5,452.6Z"/>
+  <polyline class="a" points="167 487.54 167 72.54 486 8.54 486.5 418.47"/>
+  <line class="a" x1="167" y1="138.54" x2="486" y2="69.54"/>
+</svg>

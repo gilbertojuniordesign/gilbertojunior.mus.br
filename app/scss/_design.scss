@@ -1,0 +1,170 @@
+// Layout
+.min-h-50 {
+	min-height: 50%;	
+}
+.min-h-100 {
+	min-height: 100%;	
+}
+@include respond-to(upToSmall) {
+	.min-h-50-xs {
+		min-height: 50%;	
+	}	
+	.min-h-100-xs {
+		min-height: 100%;
+	}
+}
+@include respond-to(upToMedium) {
+	.min-h-50-sm {
+		min-height: 50%;	
+	}	
+	.min-h-100-sm {
+		min-height: 100%;	
+	}
+}
+@include respond-to(upToLarge) {
+	.min-h-50-md {
+		min-height: 50%;	
+	}	
+	.min-h-100-md {
+		min-height: 100%;	
+	}
+}
+@include respond-to(upToXlarge) {
+	.min-h-50-lg {
+		min-height: 50%;	
+	}	
+	.min-h-100-lg {
+		min-height: 100%;	
+	}
+}
+
+// Sections
+section, form {
+	&::before { // âncoras
+	  display: block; 
+	  content: " "; 
+	  margin-top: -$spacer * 6; 
+	  height: $spacer * 8; 
+	  visibility: hidden; 
+	  pointer-events: none;
+	}
+ 	header {
+		margin-bottom: ($spacer * 4)
+ 	}
+	.h6-section,
+	.h5-section,
+	.h4-section,
+	.h3-section,
+	.h2-section,
+	.h1-section {	
+		margin-bottom:0;
+	} 	
+ 	// Subcategoria
+ 	.subcat {
+ 		h6, h5, h4, h3, h2, h1 {
+ 			text-transform: uppercase;
+ 			font-size: $font-size-xl;
+ 			font-weight: $font-weight-bold;
+ 			margin-bottom: ($spacer);
+ 		}
+ 	}
+	// Cards
+	.card {
+		border: 0;
+		border-radius: 0;
+		.card-img-top {
+			max-width: 10rem;
+			min-height: 15rem;		
+			@include respond-to(upToMedium) {
+				max-width: 5rem;
+				min-height: 7.5rem;						
+			}
+		}
+	} 	
+}
+.section-margin-bottom {
+	margin-bottom: $section-margin-bottom;
+}
+
+// Feature
+.feature {
+	background-image: url(../images/feature.jpg);
+	background-size: cover;
+	background-position: center;
+  display:flex;
+  align-items:center;	
+  border-bottom: $skyblue solid $stroke-size-1;
+  @include respond-to(upToMedium) {
+		h1 {
+			font-size: $font-size-xl;
+			line-height: 1.4;
+		}
+	}
+  .ico-scroll {
+  	font-size: $font-size-xl;
+  	position: absolute;
+  	right: 50%;
+  	bottom: 0;
+  	margin-right: -25%;
+  	color: $skyblue;
+		transition: $transition-all-easy-1;
+		width: 50%;
+		height: $spacer*8;
+    padding-top: $spacer*2;	
+    opacity: 1;
+    visibility: visible;
+  	&:hover {
+  		bottom: $spacer;  		
+  		color: $yellow;
+  		transition: $transition-all-easy-2;
+  	}
+  	&.hidden {
+			transition: $transition-all-easy-1;
+    	opacity: 0;
+    	visibility: hidden;
+  	}
+  }
+}
+
+// Destaque
+.destaque {
+	// border-top: $gray-dark solid $stroke-size-1*2;
+	background: url(../images/parallax1.jpg) center fixed no-repeat;
+	background-size: cover;
+	article {
+		background-color: rgba($blue-gray, .9);
+	}  
+}
+
+// Preços
+.plano {
+	background-color: $gray-lightest;	
+	border: $gray-lightest solid $stroke-size-1*2;	
+	transition: $transition-all-easy-1;	
+	&:hover {
+		border-color: $blue;
+		transition: $transition-all-easy-1;
+	}	
+	.preco {
+		font-size: $font-size-lg;
+	}
+	.pacote {
+		font-size: $font-size-base;
+	}
+}
+
+// Footer
+footer {
+	background-color: $blue-gray;
+	a {
+		color: $skyblue;
+		transition: $transition-all-easy-1;
+		&:hover {
+			color: $yellow;
+			transition: $transition-all-easy-1;			
+		}
+		i {
+			font-size: $font-size-xl;
+		}
+	}
+}

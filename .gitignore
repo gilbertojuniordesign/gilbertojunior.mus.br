@@ -1,0 +1,4 @@
+app/php-mailer/
+app/template-parts/mail.php
+dist/
+node_modules/

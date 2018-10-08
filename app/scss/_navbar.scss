@@ -1,0 +1,224 @@
+/* Navbar*/
+.navbar {
+	@include respond-to(medium) {			
+		padding: $spacer;
+		&.skyblueNavbar {
+		  background-color: rgba($skyblue, .95);
+			transition: $transition-all-easy-2;	
+		}
+		&.blackNavbar {
+			background-color: rgba($black, .25);
+			transition: $transition-all-easy-2;
+		}
+	}
+	@include respond-to(upToMedium) {
+		background-color: 	rgba($blue-gray, .9);
+		padding: 0 !important;		
+	}	
+  .navbar-brand {
+  		width: 50%;
+  		padding: 0;
+		@include respond-to(upToMedium) {			  	
+			padding: $spacer/2;
+		}
+    &:hover,
+    &:focus {
+			}  	
+		img {
+    height: 60px; 
+  	}
+  	svg  {
+			@include respond-to(medium) {
+    		height: 60px; 				
+  			@at-root .skyblueNavbar .navbar-brand svg path {						    		
+  				fill: $blue-gray;
+				}
+				@at-root .blackNavbar .navbar-brand svg path {
+	    		fill: $skyblue;						
+				}
+			}
+			@include respond-to(upToMedium) {	
+    		height: 40px;				
+				@at-root .navbar .navbar-brand svg path {
+	    		fill: $skyblue;						
+				}
+			}
+		}
+	}
+	.btn-nav {
+		background-color: transparent;
+		outline: none;
+		border: none;
+		padding: 0;
+		z-index: 1000;
+		position: absolute;
+		right: $spacer/2;
+		top: $spacer/2;
+		@include respond-to(medium) {	
+			display:none;
+		}
+		.hamburger-inner {
+			background-color: $skyblue;
+			&:after,
+			&:before {
+				background-color: $skyblue;				
+			}
+		}
+	}
+	.menu {
+		width:100%;
+		@include respond-to(upToMedium) {
+		}		
+		@include respond-to(upToMedium) {
+			background-color: darken($blue-gray, 5% );	
+			height: 100vh;									
+			opacity: 0;
+			visibility: hidden;
+			top: 0;
+			position: fixed;	
+			transition: $transition-all-easy-1;			
+			&.open {
+				width: 100%;
+				opacity: 1;
+				visibility: visible;				
+				transition: $transition-all-easy-1;				
+			}
+		}
+		.navbar-nav {
+			@include respond-to(medium) {
+				justify-content: center;				
+			}
+			@include respond-to(upToMedium) {
+				justify-content: flex-start;
+				border-top: $stroke-dark;
+				padding: $spacer;
+			}
+			.nav-item {	
+				font-size: $font-size-base;
+				font-weight: $font-weight-extra-bold;				
+				@include respond-to(medium) {
+					text-transform: uppercase;		
+					position: relative;								
+				}					
+				@include respond-to(upToMedium) {
+					font-size: $font-size-lg;
+					text-transform: none;
+					font-weight: $font-weight-normal;
+					// &:nth-child(1) {
+					// 	margin-top: $spacer * 1;
+					// }						
+				}
+				.nav-link {
+			    transition: $transition-all-easy-1;
+  				@include respond-to(medium) {
+			    	@at-root .skyblueNavbar .navbar-nav .nav-item .nav-link {
+							color: $blue-gray;
+		    		}
+			    	@at-root .blackNavbar .navbar-nav .nav-item .nav-link {
+							color: $skyblue;
+		    		}
+		    		// botão Contato
+			    	@at-root .navbar-nav.contato .nav-item {		    		
+							overflow: hidden;
+							display: inline-block;
+							position: relative;
+						}
+			    	@at-root .navbar-nav.contato .nav-item .nav-link {
+							border: $stroke-size-1*2 solid $yellow;
+							color: $yellow;							
+				    	span {
+					    	color: $yellow;
+								transition: $transition-all-easy-1;					    	
+					    	position: relative;
+					    	z-index: 5;
+				    	}							
+							&:after {
+								content:" ";
+								position: absolute;
+								width: 1px;
+								left: 0;
+								right: 0;
+								top: 0;
+								bottom: 0;
+								z-index: 0;
+								transition: $transition-all-easy-1;
+					    	background-color: $yellow;
+								opacity: 0;
+								margin: auto;
+							}
+					    &:hover,
+					    &:focus {
+								opacity: 1 !important;
+					    	span {
+						    	color: $skyblue;
+									transition: $transition-all-easy-1;						    	
+					    	}								
+								&:after {
+									opacity: 1;
+									transform: scaleX(200);					    	
+					    	}					    	
+							}
+							&.active {
+								&:before {
+								}
+							}
+						}		    		
+	    		}
+					@include respond-to(upToMedium) {
+						color: $skyblue;
+						padding-left: $spacer;
+			    	@at-root .navbar-nav.contato .nav-item .nav-link {						
+							color: $blue-gray !important;
+							background-color: $yellow;
+							font-weight: $font-weight-bold;
+							padding: $spacer/2 0 !important;
+							&:hover {
+								opacity: 1 !important;
+								background-color: darken($yellow, 10%);
+							}
+							&.active {
+								&:before {
+									display: none !important;
+								}
+							}
+						}
+					}
+
+					// Hovering
+			    &:hover,
+			    &:focus {
+			    	opacity: .5;
+			    	transition: $transition-all-easy-1;
+			    }
+			    // Marcador active
+					&.active {
+						transition: $transition-all-easy-1;			
+						position: relative;		
+						&:before {
+							content: "";
+							display: block;
+							background-color: $yellow;
+							position: absolute;
+							transition: $transition-all-easy-1;
+							@include respond-to(medium) {
+								width: 1em;
+								height: 1em;								
+								border-radius: 1em;						
+								left: calc(50% - .5rem);
+								top: -50%;								
+							}							
+							@include respond-to(upToMedium) {
+								width: .5em;
+								height: .5em;
+								border-radius: .5em;
+								position: absolute;
+								top: calc(50% - .25rem);
+								left: -.5rem;
+							}
+						}					
+					}					
+				}
+			}
+		}
+	}
+}

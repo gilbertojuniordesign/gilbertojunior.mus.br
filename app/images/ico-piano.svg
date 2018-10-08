@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 392.5 312">
+  <defs>
+    <style>
+      .a {
+        fill: none;
+        stroke: #ff9e01;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 8px;
+      }
+
+      .b {
+        fill: #ff9e01;
+      }
+    </style>
+  </defs>
+  <title>ico-piano</title>
+  <g>
+    <rect class="a" x="4" y="244" width="384" height="64"/>
+    <path class="a" d="M388.5,244H4.5V59.61A55.61,55.61,0,0,1,60.11,4h75.78A55.61,55.61,0,0,1,191.5,59.61v1.13a55.61,55.61,0,0,0,55.76,55.61l85.48-.2a55.61,55.61,0,0,1,55.76,55.61Z"/>
+    <line class="a" x1="36" y1="244" x2="36" y2="308"/>
+    <line class="a" x1="68" y1="244" x2="68" y2="308"/>
+    <line class="a" x1="100" y1="244" x2="100" y2="308"/>
+    <line class="a" x1="132" y1="244" x2="132" y2="308"/>
+    <line class="a" x1="164" y1="244" x2="164" y2="308"/>
+    <line class="a" x1="196" y1="244" x2="196" y2="308"/>
+    <line class="a" x1="228" y1="244" x2="228" y2="308"/>
+    <line class="a" x1="260" y1="244" x2="260" y2="308"/>
+    <line class="a" x1="292" y1="244" x2="292" y2="308"/>
+    <line class="a" x1="324" y1="244" x2="324" y2="308"/>
+    <line class="a" x1="356" y1="244" x2="356" y2="308"/>
+    <rect class="b" x="28" y="244" width="16" height="32"/>
+    <rect class="b" x="60" y="244" width="16" height="32"/>
+    <rect class="b" x="124" y="244" width="16" height="32"/>
+    <rect class="b" x="156" y="244" width="16" height="32"/>
+    <rect class="b" x="188" y="244" width="16" height="32"/>
+    <rect class="b" x="252" y="244" width="16" height="32"/>
+    <rect class="b" x="284" y="244" width="16" height="32"/>
+    <rect class="b" x="348" y="244" width="16" height="32"/>
+  </g>
+</svg>

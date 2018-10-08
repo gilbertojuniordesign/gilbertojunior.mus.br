@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 392 137">
+  <defs>
+    <style>
+      .a {
+        fill: none;
+        stroke: #ff9e01;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 8px;
+      }
+
+      .b {
+        fill: #ff9e01;
+      }
+    </style>
+  </defs>
+  <title>ico-teclado</title>
+  <g>
+    <rect class="a" x="4" y="69" width="384" height="64"/>
+    <rect class="a" x="4" y="4" width="384" height="64"/>
+    <line class="a" x1="36" y1="69" x2="36" y2="133"/>
+    <line class="a" x1="68" y1="69" x2="68" y2="133"/>
+    <line class="a" x1="100" y1="69" x2="100" y2="133"/>
+    <line class="a" x1="132" y1="69" x2="132" y2="133"/>
+    <line class="a" x1="164" y1="69" x2="164" y2="133"/>
+    <line class="a" x1="196" y1="69" x2="196" y2="133"/>
+    <line class="a" x1="228" y1="69" x2="228" y2="133"/>
+    <line class="a" x1="260" y1="69" x2="260" y2="133"/>
+    <line class="a" x1="292" y1="69" x2="292" y2="133"/>
+    <line class="a" x1="324" y1="69" x2="324" y2="133"/>
+    <line class="a" x1="356" y1="69" x2="356" y2="133"/>
+    <rect class="b" x="28" y="69" width="16" height="32"/>
+    <rect class="b" x="28.5" y="27" width="16" height="16" rx="7.92" ry="7.92"/>
+    <rect class="b" x="60.5" y="27" width="16" height="16" rx="7.92" ry="7.92"/>
+    <rect class="b" x="92.5" y="27" width="16" height="16" rx="7.92" ry="7.92"/>
+    <rect class="b" x="124.5" y="27" width="16" height="16" rx="7.92" ry="7.92"/>
+    <rect class="b" x="60" y="69" width="16" height="32"/>
+    <rect class="b" x="124" y="69" width="16" height="32"/>
+    <rect class="b" x="156" y="69" width="16" height="32"/>
+    <rect class="b" x="188" y="69" width="16" height="32"/>
+    <rect class="b" x="252" y="69" width="16" height="32"/>
+    <rect class="b" x="284" y="69" width="16" height="32"/>
+    <rect class="b" x="348" y="69" width="16" height="32"/>
+  </g>
+</svg>

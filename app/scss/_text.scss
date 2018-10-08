@@ -1,0 +1,31 @@
+body {
+	@include respond-to(upToMedium) {
+	font-size: $font-size-base !important; 
+}
+	@include respond-to(medium) {
+		font-size: $font-size-lg !important;
+	}
+}
+h4, h5, h6 {
+	font-weight: $font-weight-bold;
+}
+.text-blue {
+	color: $blue !important;
+}
+.text-skyblue {
+	color: $skyblue  !important;
+}
+
+.text-yellow {
+	color: $yellow  !important;
+}
+
+.text-black {
+	color: $black  !important;
+}
+.text-blue-gray {
+	color: $blue-gray  !important;
+}
+.text-white {
+	color: $white  !important;
+}

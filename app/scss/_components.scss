@@ -1,0 +1,155 @@
+// Forms
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="name"],
+input[type="url"],
+input[type="file"],
+input[type="number"], 
+textarea,
+select {
+	background-color: $white;
+	color: $blue-gray;
+	opacity:.75;
+	padding: $spacer/2;
+	transition: $transition-all-easy-1;
+	border: $stroke-size-1*2 solid ;
+	border-color: rgba($blue-gray, .75);
+	font-weight: $font-weight-bold;
+	border-radius: $border-radius-2;
+}
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+textarea {
+	min-height: 8rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="name"]:focus,
+input[type="url"]:focus,
+input[type="file"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+	opacity:1 !important;
+	border-color: rgba($blue-gray, 1);	
+	outline: none;
+	transition: $transition-all-easy-1;	
+}
+
+	// Validação
+	.error:not(:empty) {
+	  background-color: $red;
+	  color: $white;
+	  position: relative;
+		border-radius: $border-radius-2;
+		padding: $spacer/2 $spacer;
+	}
+	.error:not(:empty):before {
+		top: -.5rem;
+	  left: 50%;
+	  content: "";
+	  height: 0;
+	  width: 0;
+	  position: absolute;
+	  pointer-events: none;
+		margin-left: -.5rem;		
+	  border-right: solid .5rem transparent;
+	  border-left: solid .5rem transparent;
+	  border-bottom: solid .5rem $red;	
+	}
+// Botões
+.btn {
+	padding: $spacer/2 $spacer !important;
+	font-weight: $font-weight-extra-bold !important;
+	text-transform: uppercase;	
+	border: $stroke-size-1*2 solid $yellow !important;
+	border-radius: 0 !important;
+	overflow: hidden;
+	display: inline-block;
+	position: relative;
+	background-color: $yellow;
+	span {
+		color: $white;
+		transition: $transition-all-easy-1;					    	
+		position: relative;
+		z-index: 5;
+	}							
+	&:before {
+		content:" ";
+		position: absolute;
+		width: 1px;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 0;
+		transition: $transition-all-easy-1;
+		background-color: $white;
+		opacity: 0;
+		margin: auto;
+	}
+	&:hover {
+		opacity: 1 !important;
+		span {
+	  	color: $yellow;
+			transition: $transition-all-easy-1;						    	
+		}								
+		&:before {
+			opacity: 1;
+			transform: scaleX(200);					    	
+		}					    	
+	}
+	&:focus {
+		box-shadow: none !important;
+	}
+}
+
+// Carroussel
+.carousel {
+	height: 300px;
+	i.fas {
+		position: absolute;
+		top: 0;
+	  @include respond-to(upToMedium) {		
+			left: 0;
+		}
+	  @include respond-to(medium) {		
+			left: $spacer*3;
+		}		
+	}	
+	.carousel-indicators {
+		position: relative;
+		bottom: 0;
+		li {
+			background-color: rgba($blue-gray, .1);
+			width: 1rem;
+			height: 1rem;
+			border-radius: 1rem;
+			margin: $spacer $spacer/2;
+			&.active {
+				background-color: rgba($yellow, 1);
+			}
+		}
+	}
+	.carousel-control-prev,
+	.carousel-control-next {
+		width: 10%;
+		opacity: 1 !important;
+		transition: $transition-all-easy-1;
+		&:hover {
+			opacity: .5 !important;
+			transition: $transition-all-easy-1;
+		}
+		.fa, .fas {
+			color: $yellow;
+			font-size: $font-size-base*2;
+			transition: $transition-all-easy-1;		
+		}
+	}	
+}
