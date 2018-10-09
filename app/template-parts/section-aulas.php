@@ -14,7 +14,6 @@
 				<p class="card-text">Aulas de piano para todas as idades e níveis. Programa de aulas adequado para cada aluno de acordo com seu objetivo e nível técnico. Inclui iniciação e teoria musical para iniciantes.</p>
 			</div>
 		</div>
-		<hr>
 		<div data-aos="fade" class="card col-sm-12 col-md-4 mb-4 pb-sm-4">
 				<img class="card-img-top m-auto" alt="Teclado" src="images/ico-teclado.svg">
 			<div class="card-body">

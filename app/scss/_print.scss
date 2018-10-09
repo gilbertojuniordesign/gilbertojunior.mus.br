@@ -1,0 +1,111 @@
+// Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css
+@page {
+  margin-top: 2cm;
+  margin-bottom: 2cm;
+  margin-left: 2cm;
+  margin-right: 2cm;
+}
+*,
+*:before,
+*:after {
+  background: transparent;
+  color: #000;
+  box-shadow: none;
+  text-shadow: none;
+}
+html, body {
+	color: #000;
+	background: transparent;
+	font-family: arial, 'sans-serif';
+	font-size: 12pt;
+	line-height: 1.4;
+}
+a,
+a:visited {
+  text-decoration: underline;
+}
+
+a[href]:after {
+  content: " (" attr(href) ")";
+}
+
+abbr[title]:after {
+  content: " (" attr(title) ")";
+}
+
+// Don't show links that are fragment identifiers,
+// or use the `javascript:` pseudo protocol
+a[href^="#"]:after,
+a[href^="javascript:"]:after {
+  content: "";
+}
+pre,
+blockquote {
+  border: none;
+  page-break-inside: avoid;
+}
+thead {
+  display: table-header-group; // h5bp.com/t
+}
+tr,
+img {
+  page-break-inside: avoid;
+}
+img {
+	max-width: 50%;
+	margin: 12pt;
+	display: block;
+}
+small,
+blockquote,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  orphans: 3;
+  widows: 3;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;    	
+  page-break-after: avoid;
+  margin-top: 24pt;
+}
+hr {
+	border-top: 1mm solid #333;
+	border-bottom: none;
+	margin: 48pt 0;
+}
+form {
+	display: none;
+}
+// Bootstrap
+.container, .container-fluid {
+	height: auto;
+	background: transparent;
+	width: auto;
+}
+.navbar {
+  display: none;
+}
+.btn {
+  display: none;    		
+}
+.label {
+  border: 1px solid #000;
+}
+.card-img-top {
+	display: none;
+}
+// Custom
+#midia,
+#depoimentos {
+	display: none;
+}

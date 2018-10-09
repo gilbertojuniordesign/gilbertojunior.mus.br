@@ -7,7 +7,6 @@
 
 <!--build:css ./css/styles.min.css-->		
 <link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/animate.css">
 <!--endbuild-->
 
 <!--favicons-->

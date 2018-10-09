@@ -1,2 +1,7 @@
-@import "_index";
-@import "node_modules/bootstrap/scss/bootstrap";
+@media screen {
+	@import "_index";
+	@import "node_modules/bootstrap/scss/bootstrap";
+}
+@media print {
+	@import "_print";
+}
