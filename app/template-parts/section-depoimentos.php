@@ -1,4 +1,4 @@
-<section id="depoimentos" data-aos="fade" class="container mb-4">
+<div id="depoimentos" data-aos="fade" class="container mb-4">
 	<div class="row subcat">
 		<div class="col">
 			<div class="align-items-center">
@@ -42,4 +42,4 @@
 			</div>					
 		</div>
 	</div>
-</section>
+</div>

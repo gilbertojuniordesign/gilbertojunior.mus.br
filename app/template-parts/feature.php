@@ -5,7 +5,7 @@
 				<div class="row>">
 					<div class="col ">		
 						<header class="text-center text-white p-sm-5">
-							<h1 class="font-weight-normal">Professor de piano, teclado e teoria musical para todas as idades em São&nbsp;Paulo ou remoto.</h1>
+							<h1 class="font-weight-normal">Professor de piano e teclado em São&nbsp;Paulo ou remoto.</h1>
 						</header>
 					</div>
 				</div>

@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="pt-br">
 	<head>
+		<?php include 'template-parts/analytics.php'; ?>		
 		<?php include 'template-parts/header.php'; ?>
 	</head>
 	<body data-spy="scroll" data-target=".navbar" data-offset="200">

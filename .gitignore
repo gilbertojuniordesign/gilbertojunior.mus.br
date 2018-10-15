@@ -1,4 +1,6 @@
+package-lock.json
 app/php-mailer/
 app/template-parts/mail.php
+app/template-parts/analytics.php
 dist/
 node_modules/

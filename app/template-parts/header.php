@@ -1,3 +1,9 @@
+<?php
+$title = 'Gilberto Junior Professor de Piano e Teclado';
+$key = 'aulas, professor, piano, pianista, teclado, domicílio, remoto';
+$desc = 'Aulas particulares de piano, teclado e iniciação musical em São Paulo ou remoto. Primeira aula grátis!';
+$img = 'https://www.gilbertojunior.mus.br/images/feature.jpg'
+?>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Gilberto Junior Professor de Piano e Teclado</title>
@@ -20,3 +26,25 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#3b3c43">
 <!--/favicons-->
+
+<!-- COMMON TAGS -->
+<meta charset="utf-8">
+<title><?php echo "$title";?></title>
+<!-- Search Engine -->
+<meta name="description" content="<?php echo "$desc";?>">
+<!-- Schema.org for Google -->
+<meta itemprop="name" content="<?php echo "$title";?>">
+<meta itemprop="description" content="<?php echo "$desc";?>">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="<?php echo "$title";?>">
+<meta name="twitter:description" content="<?php echo "$desc";?>">
+<meta name="twitter:image:src" content="<?php echo "$img";?>">
+<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+<meta name="og:title" content="<?php echo "$title";?>">
+<meta name="og:description" content="<?php echo "$desc";?>">
+<meta name="og:image" content="<?php echo "$img";?>">
+<meta name="og:url" content="https://www.gilbertojunior.mus.br">
+<meta name="og:site_name" content="<?php echo "$title";?>">
+<meta name="og:locale" content="pt_br">
+<meta name="og:type" content="website">
