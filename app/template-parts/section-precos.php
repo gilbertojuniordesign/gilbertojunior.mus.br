@@ -1,4 +1,4 @@
-<section id="precos" data-aos="fade" class="container min-h-100-lg">			
+<section id="precos" data-aos="fade" class="container">			
 	<div class="row">
 		<article class="col">
 			<header>
@@ -6,23 +6,23 @@
 			</header>
 			<div class="row subcat">
 				<div class="col-12 col-sm-6 mb-3">
-					<div class="p-5 text-center text-blue plano">
-						<h4>Local ou webcam</h4>
-						<p class="m-0 preco font-weight-bold">R$ 60 por aula</p>
-						<small class="pacote">4 aulas = R$ 240,00</small>
+					<div class="p-5 text-center plano">
+						<h4>Local</h4>
+						<p class="m-0 preco"><strong>R$ 60 por aula</strong></p>
+						<p>4 aulas = R$ 240,00</p>
 					</div>					
 				</div>
 				<div class="col-12 col-sm-6 mb-3">
-					<div class="p-5 text-center text-blue plano">
-						<h4>Casa do aluno</h4>
-						<p class="m-0 font-weight-bold preco">R$ 80 por aula</p>
-						<small class="pacote">4 aulas = R$ 320,00</small>
+					<div class="p-5 text-center plano">
+						<h4>Domicílio</h4>
+						<p class="m-0 preco"><strong>R$ 80 por aula</strong></p>
+						<p>4 aulas = R$ 320,00</p>
 					</div>
 				</div>					
 			</div>
 			<div class="row">
 				<div class="col text-center">
-					<h5 class="m-5 font-weight-bold">Agende uma aula gratuíta</h5>
+					<p class="m-5"><strong>Agende uma aula gratuíta</strong></p>
 					<a class="btn btn-yellow" href="#contato"><span>Agendar</span></a>
 				</div>
 			</div>

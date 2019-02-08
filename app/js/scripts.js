@@ -8,11 +8,11 @@ $(window).scroll(function() {
     var scrollNav = 200;
     var scrollBt = 10;
     if ($(window).scrollTop() >= scrollNav) {
-        nav.addClass('skyblueNavbar');
-        nav.removeClass('blackNavbar');
+        nav.addClass('scrollNavbar');
+        nav.removeClass('startNavbar');
     } else {
-        nav.addClass('blackNavbar');		    	
-        nav.removeClass('skyblueNavbar');
+        nav.addClass('startNavbar');		    	
+        nav.removeClass('scrollNavbar');
     }
     if ($(window).scrollTop() >= scrollBt) {
         scroll.addClass('hidden');  
@@ -85,7 +85,7 @@ AOS.init({
   
 
   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  offset: 120, // offset (in px) from the original trigger point
+  offset: 80, // offset (in px) from the original trigger point
   delay: 0, // values from 0 to 3000, with step 50ms
   duration: 400, // values from 0 to 3000, with step 50ms
   easing: 'ease', // default easing for AOS animations

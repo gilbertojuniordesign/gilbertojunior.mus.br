@@ -3,14 +3,14 @@
 		<div class="col">
 			<div class="container">
 				<div class="row>">
-					<div class="col ">		
-						<header class="text-center text-white p-sm-5">
-							<h1 class="font-weight-normal">Professor de piano e teclado em São&nbsp;Paulo ou remoto.</h1>
+					<div class="col">
+						<header class="text-center text-white">
+							<h1>Professor de piano e teclado em São&nbsp;Paulo</h1>
 						</header>
 					</div>
 				</div>
 			</div>
 		</div>
-		<a href="#sobre" class="ico-scroll text-center"><i class="fas fa-chevron-down"></i></a>		
+		<a href="#sobre" class="ico-scroll text-center"><i class="far fa-arrow-alt-circle-down"></i></a>		
 	</div>
 </div>

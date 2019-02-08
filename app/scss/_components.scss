@@ -12,8 +12,8 @@ select {
 	color: $blue-gray;
 	opacity:.75;
 	padding: $spacer/2;
-	transition: $transition-all-easy-1;
-	border: $stroke-size-1*2 solid ;
+	transition: $transition1;
+	border: $border*2 solid ;
 	border-color: rgba($blue-gray, .75);
 	font-weight: $font-weight-bold;
 	border-radius: $border-radius-2;
@@ -39,7 +39,7 @@ select:focus {
 	opacity:1 !important;
 	border-color: rgba($blue-gray, 1);	
 	outline: none;
-	transition: $transition-all-easy-1;	
+	transition: $transition1;	
 }
 
 	// Validação
@@ -49,6 +49,8 @@ select:focus {
 	  position: relative;
 		border-radius: $border-radius-2;
 		padding: $spacer/2 $spacer;
+		display: block;
+		margin-top: $spacer;
 	}
 	.error:not(:empty):before {
 		top: -.5rem;
@@ -64,19 +66,19 @@ select:focus {
 	  border-bottom: solid .5rem $red;	
 	}
 // Botões
-.btn {
+.btn-yellow {
 	padding: $spacer/2 $spacer !important;
 	font-weight: $font-weight-extra-bold !important;
 	text-transform: uppercase;	
-	border: $stroke-size-1*2 solid $yellow !important;
+	border: $border*2 solid $yellow !important;
 	border-radius: 0 !important;
 	overflow: hidden;
 	display: inline-block;
 	position: relative;
-	background-color: $yellow;
+	background-color: $yellow !important;
 	span {
 		color: $white;
-		transition: $transition-all-easy-1;					    	
+		transition: $transition1;					    	
 		position: relative;
 		z-index: 5;
 	}							
@@ -89,7 +91,7 @@ select:focus {
 		top: 0;
 		bottom: 0;
 		z-index: 0;
-		transition: $transition-all-easy-1;
+		transition: $transition1;
 		background-color: $white;
 		opacity: 0;
 		margin: auto;
@@ -98,7 +100,7 @@ select:focus {
 		opacity: 1 !important;
 		span {
 	  	color: $yellow;
-			transition: $transition-all-easy-1;						    	
+			transition: $transition1;						    	
 		}								
 		&:before {
 			opacity: 1;
@@ -110,30 +112,53 @@ select:focus {
 	}
 }
 
+.btn-yellow-line {
+	border: $border solid $yellow;
+	border-radius: $border-radius-5;
+	color: $yellow;
+	font-weight: $font-weight-bold;	
+	padding: $spacer/2 $spacer;
+	transition: $transition1;					    	
+  &:hover,
+  &:focus {
+		color: $blue-gray;
+		border-color: $blue-gray;
+	}
+}
+
 // Carroussel
 .carousel {
-	height: 300px;
-	i.fas {
-		position: absolute;
-		top: 0;
-	  @include respond-to(upToMedium) {		
-			left: 0;
-		}
-	  @include respond-to(medium) {		
-			left: $spacer*3;
-		}		
-	}	
 	.carousel-indicators {
 		position: relative;
 		bottom: 0;
+		margin-bottom: $spacer*2;
 		li {
-			background-color: rgba($blue-gray, .1);
+			background-color: rgba($white, .5);
 			width: 1rem;
 			height: 1rem;
 			border-radius: 1rem;
-			margin: $spacer $spacer/2;
+			border: 0;
+			margin: 0 $spacer;
 			&.active {
 				background-color: rgba($yellow, 1);
+			}
+		}
+	}
+	.carousel-inner {
+		overflow-x: hidden;
+		overflow-y: visible;
+		blockquote {
+			&:before, &:after {
+				position: relative;
+   			font-family: "Font Awesome 5 Free";
+   			font-weight: 900;
+   			font-size: $font-size-base;
+			}
+			&:before {
+				content: "\f10d";			
+			}
+			&:after {
+				content: "\f10e";
 			}
 		}
 	}
@@ -141,15 +166,41 @@ select:focus {
 	.carousel-control-next {
 		width: 10%;
 		opacity: 1 !important;
-		transition: $transition-all-easy-1;
+		transition: $transition1;
 		&:hover {
 			opacity: .5 !important;
-			transition: $transition-all-easy-1;
+			transition: $transition1;
 		}
 		.fa, .fas {
 			color: $yellow;
 			font-size: $font-size-base*2;
-			transition: $transition-all-easy-1;		
+			transition: $transition1;		
 		}
 	}	
+}
+
+// Accordion
+#accordion {
+	.card {
+		border:0;
+		.card-header {
+	    padding: 0;
+	    margin-bottom: 0;
+	    color: inherit;
+	    background-color: transparent;
+	    border: none;	
+	    .btn-link {
+	    	font-weight: $font-weight-bold;
+	    	font-size: $lead-font-size;
+	    	padding: 0;
+	    	&:after {
+					content: '\f107';
+	   			font-family: "Font Awesome 5 Free";
+	    	}
+	    	&:hover, &:active, &:focus {
+	    		text-decoration: none;
+	    	}
+	    }	
+		}
+	}
 }

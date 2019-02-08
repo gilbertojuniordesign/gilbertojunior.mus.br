@@ -3,8 +3,8 @@
 // Color system
 $blue-gray: #3e3f44 !default;
 $blue:    	#001d7e !default;
-$yellow:  	#f0a321 !default;
 $skyblue: 	#e8ecff !default;
+$yellow:  	#f0a321 !default;
 $red:				#ff5a5a !default;
 $white:			#ffffff !default;
 $black:			#000000 !default;
@@ -48,16 +48,16 @@ $font-weight-base:            $font-weight-normal;
 $line-height-base:            1.75 !default;
 
 // Heading
-$h1-font-size:                2.5em 	!default;
-$h2-font-size:                2.25em 	!default;
-$h3-font-size:                2em 		!default;
-$h4-font-size:                1.5em  	!default;
-$h5-font-size:                1.25em	!default;
+$h1-font-size:                3em 	!default;
+$h2-font-size:                2.5em 	!default;
+$h3-font-size:                2.25em 		!default;
+$h4-font-size:                2em  	!default;
+$h5-font-size:                1.5em	!default;
 $h6-font-size:                1em			!default;
 
 $headings-margin-bottom:      $spacer*2 !default;
 $headings-font-family:        inherit;
-$headings-font-weight:        400 !default;
+$headings-font-weight:        500 !default;
 $headings-line-height:        1.2;
 $headings-color:              inherit;
 
@@ -73,7 +73,7 @@ $display3-weight:             300;
 $display4-weight:             300;
 $display-line-height:         $headings-line-height;
 
-$lead-font-size:              ($font-size-base * 1.25);
+$lead-font-size:              ($font-size-base*1.25);
 $lead-font-weight:            300;
 
 $small-font-size:             80%;
@@ -81,7 +81,7 @@ $small-font-size:             80%;
 $blockquote-font-size:        ($font-size-base);
 
 $hr-border-color:             rgba($skyblue, .5) !default;
-$hr-margin-y:									($spacer * 8) !default;
+$hr-margin-y:									($spacer * 4) !default;
 
 // CUSTOM
 $section-margin-bottom:			($hr-margin-y);
@@ -90,22 +90,20 @@ $section-margin-bottom:			($hr-margin-y);
 $paragraph-margin-bottom:   2rem !default;
 
 // Transitions
-$transition-all-easy-1: 250ms ease all;
-$transition-all-easy-2: 500ms ease all;
-$transition-all-easy-3: 750ms ease all;
-$transition-all-easy-4: 1000ms ease all;
-$transition-all-easy-5: 1250ms ease all;
-$transition-all-easy-6: 1500ms ease all;
-$transition-all-easy-7: 1750ms ease all;
-$transition-all-easy-8: 2000ms ease all;
+$transition1: 250ms linear all;
+$transition2: 500ms linear all;
+$transition3: 750ms linear all;
+$transition4: 1000ms linear all;
+$transition5: 1250ms linear all;
+$transition6: 1500ms linear all;
+$transition7: 1750ms linear all;
+$transition8: 2000ms linear all;
 
 // Navbar
 $navbar-nav-link-padding-x: 1rem;
 
 // Custom strokes and corners
-$stroke-size-1:		.1rem;
-$stroke-dark:			rgba($black, .1) $stroke-size-1 solid;
-$stroke-light:		rgba($white, .1) $stroke-size-1 solid;
+$border:					.1rem;
 $border-radius-1:	.25rem;
 $border-radius-2:	.5rem;
 $border-radius-3:	.75rem;

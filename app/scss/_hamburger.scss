@@ -128,6 +128,9 @@ $hamburger-types: (
     }
 
     &.is-active {
+      position: fixed;
+      right: $spacer/2;
+      top: $spacer/2;
       .hamburger-inner {
         background-color: transparent;
         transform: rotateY(180deg);

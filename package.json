@@ -1,35 +1,36 @@
 {
   "name": "gilbertojunior.mus.br",
   "version": "1.0.0",
-  "description": "One-page website for Gilberto Junior, a Piano Teacher.",
-  "main": "index.js",
+  "description": "Website for Gilberto Junior, a piano teacher.",
+  "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \\\"Error: no teste specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gilbertojuniordesign/gilbertojunior.mus.br.git"
   },
   "author": "Gilberto Junior",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gilbertojuniordesign/gilbertojunior.mus.br/issues"
+  },
+  "homepage": "https://github.com/gilbertojuniordesign/gilbertojunior.mus.br#readme",
   "devDependencies": {
-    "browser-sync": "^2.23.6",
+    "bootstrap": "^4.2.1",
+    "browser-sync": "^2.26.3",
     "del": "^3.0.0",
-    "grunt-php": "^1.5.1",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^5.0.0",
-    "gulp-cache": "^1.0.2",
-    "gulp-imagemin": "^4.1.0",
-    "gulp-sass": "^3.2.1",
-    "gulp-uglify": "^3.0.0",
-    "gulp-useref": "^3.1.5",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-cache": "^1.1.1",
+    "gulp-connect-php": "^1.0.3",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1",
+    "gulp-useref": "^3.1.6",
     "run-sequence": "^2.2.1"
   },
   "dependencies": {
-    "aos": "^2.3.4",
-    "bootstrap": "^4.1.3",
-    "gulp-connect-php": "0.0.5",
-    "gulp-cssnano": "^2.1.3",
-    "imagemin": "^5.3.1",
-    "jquery": "^3.3.1",
-    "npm": "^5.8.0",
-    "popper.js": "^1.14.3",
-    "update-json": "^1.0.0"
+    "gulp-cssnano": "^2.1.3"
   }
 }

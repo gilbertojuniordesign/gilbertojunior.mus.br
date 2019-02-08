@@ -7,14 +7,18 @@ html,body {
 blockquote {
 	position: relative;
 	font-style: italic;
-  width: 80%;
-  margin: 0 auto !important;
+}
+small {
+	line-height: 1.25 !important;
+}
+a, a:hover {
+	text-decoration: none !important;
 }
 label {
 	display: block !important;
 	width: 100% !important;
 }
 hr {
-		border-width: $stroke-size-1*2 !important;
+		border-width: $border*2 !important;
 		margin-bottom: $hr-margin-y;
 }

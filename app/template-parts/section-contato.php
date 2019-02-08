@@ -1,6 +1,6 @@
 <?php include 'template-parts/mail.php'; ?>
 
-<section id="contato" data-aos="fade" class="container min-h-100-lg">			
+<section id="contato" data-aos="fade" class="container">			
 	<div class="row">
 		<div class="col">
 			<header>
@@ -12,32 +12,82 @@
 		<div class="col-sm-12 col-md-6 mb-4 mb-md-0">
 			<div class="mr-md-5">
 				<h4>Telefone</h4>
-				<p>
-					<a href="tel:+5511973332425">11 973332425</a><br>
-					<small><a href="https://goo.gl/y6HFxr">Link para mensagem no WhatsApp</a></small>
+				<p>Ligue ou envie uma mensagem direto pelo WhatsApp!</p>
+				<p class="mb-5">
+					<a href="tel:+5511973332425" class="btn-yellow-line mr-2">
+						<span>
+							<i class="fas fa-mobile-alt"></i> 11 973332425
+						</span>
+					</a>					
+					<a href="https://goo.gl/y6HFxr" class="btn-yellow-line">
+						<span>
+							<i class="fab fa-whatsapp"></i> WhatsApp
+						</span>
+					</a>
 				</p>
 				<h4>Localização</h4>
-				<p>
-					<a target="_blank" href="https://www.google.com/maps/place/S%C3%A3o+Paulo,+SP/@-23.6815315,-46.8754814,10z/data=!3m1!4b1!4m13!1m7!3m6!1s0x94ce66b99a42eac7:0x8ed06d80800b0a3c!2sItaquera,+S%C3%A3o+Paulo+-+SP,+08210-450!3b1!8m2!3d-23.5398463!4d-46.4475328!3m4!1s0x94ce448183a461d1:0x9ba94b08ff335bae!8m2!3d-23.5504546!4d-46.633358">Itaquera, São Paulo</a>
-					<br>
-					<small>Tempo de 10 a 15 minutos partindo de carro ou ônibus das estações Itaquera ou Artur Alvim.</small>
-				</p>
+				<p>Artur Alvim, São Paulo.</p>
 				<h4>Regiões atendidas</h4>
-				<p>Para saber se atendo a sua região, por favor entre em contato.</p>
+				<div id="accordion" class="mb-3">
+				  <div class="card">
+				    <div class="card-header" id="headingOne">
+				      <h5 class="mb-0">
+				        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				          Zone leste
+				        </button>
+				      </h5>
+				    </div>
+
+				    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+				      <div class="card-body">
+				        Artur Alvim, Belenzinho, Ermelino Matarazzo, Itaquera, Limoeiro, Mooca, Parque São Lucas, Patriarca, Penha, São Miguel, Tatuapé, Vila Matilde e Vila Ré.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingTwo">
+				      <h5 class="mb-0">
+				        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				          Zona oeste
+				        </button>
+				      </h5>
+				    </div>
+				    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+				      <div class="card-body">
+				        Água Branca, Barra Funda e Vila Pompéia.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingThree">
+				      <h5 class="mb-0">
+				        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				          Centro
+				        </button>
+				      </h5>
+				    </div>
+				    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+				      <div class="card-body">
+				        Bela Vista, Centro, Consolação e Jardins.
+				      </div>
+				    </div>
+				  </div>
+				</div>
 			</div>
 		</div>
-		<div class="col-sm-12 col-md-6">				
+		<div class="col-sm-12 col-md-6">
+			<h4 class="d-md-none">Escreva-me</h4>				
 			<form id="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>#form" method="POST">
 				<p>				
 					<label>
 						<input name="remetenteNome" value="<?php echo $remetenteNome;?>" class="w-100" type="text" placeholder="Nome">
-						<div class="error small"><?php echo $remetenteNomeErr;?></div>
+						<span class="error small"><?php echo $remetenteNomeErr;?></span>
 					</label>
 				</p>
 				<p>
 					<label>
 						<input name="remetenteEmail" value="<?php echo $remetenteEmail;?>" class="w-100" type="email" placeholder="E-mail">
-				  	<div class="error small"><?php echo $remetenteEmailErr;?></div>
+				  	<span class="error small"><?php echo $remetenteEmailErr;?></span>
 				  </label>
 				</p>
 				<p class="flex-row d-flex">
@@ -52,7 +102,7 @@
 				</div>
 				<div class="flex-row d-flex mt-3">
 					<div class="mr-3">
-						<button name="enviarFormulario" class="btn"><span>Enviar</span></button>
+						<button name="enviarFormulario" class="btn-yellow"><span>Enviar</span></button>
 					</div>
 					<div id="retorno" class="w-75 text-center font-weight-bold">
 						<?php

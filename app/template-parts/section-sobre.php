@@ -4,7 +4,8 @@
 			<header>
 				<h2 class="text-center h2-section">Sobre</h2>
 			</header>
-			<p>Formado em piano erudito pelo Conservatorio Oreste Sinatra, sou atualmente professor e pianista. Leciono aulas particulares de piano e teclado, atendendo alunos de diversas idades e níveis. Nestes últimos anos tenho participado de recitais em escolas e universidades além de experiências em conjunto com música popular e erudita. Como recitalista, interpretei peças da obra pianística de (cronologicamente) Bach, Mozart, Beethoven e Chopin além de compositores brasileiros como Ernesto Nazareth, Oscar Fernandez e Villa Lobos.</p>
+			<p>Com formação técnica em piano erudito e atualmente cursando bacharelado em piano pelo Instituto de Arte da UNESP, dedico meu tempo a pesquisa, ensino e performance pianística. Atendo alunos iniciantes e iniciados no instrumento e estou sempre procurando o equilíbrio entre o necessário e o agradável, pois a música tem que ser desfrutada mesmo enquanto objeto de estudo. Nestes últimos anos tenho participado de recitais em escolas e universidades além de experiências em conjunto com música popular e erudita. Como recitalista, interpretei peças da obra pianística de Bach, Mozart, Beethoven e Chopin além dos compositores brasileiros Ernesto Nazareth, Oscar Fernandez e Villa Lobos.</p>
+			<p class="text-center"><i class="far fa-file text-blue"></i> <a href="https://docs.google.com/document/d/1K795Y6pmiixjlw4bzmctK2P6HjYUCyBVFO7f0fYfnTc/edit?usp=sharing">Ver currículo</a></p>
 		</div>
 	</div>
 </section>

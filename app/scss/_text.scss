@@ -1,10 +1,13 @@
 body {
 	@include respond-to(upToMedium) {
-	font-size: $font-size-base !important; 
+	font-size: $lead-font-size*.8 !important; 
 }
 	@include respond-to(medium) {
-		font-size: $font-size-lg !important;
+		font-size: $lead-font-size !important;
 	}
+}
+h1, h2, h3 {
+	font-weight: $font-weight-normal;
 }
 h4, h5, h6 {
 	font-weight: $font-weight-bold;

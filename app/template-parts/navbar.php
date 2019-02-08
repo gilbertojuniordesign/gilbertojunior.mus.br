@@ -1,4 +1,4 @@
-<nav class="blackNavbar fixed-top navbar navbar-expand-lg">
+<nav class="startNavbar navbar navbar-expand-lg">
   <div class="navbar-brand">
     <a href="/">
 			<svg class="Gilberto Junior Pianista" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286.19 146.32">
@@ -33,21 +33,27 @@
 	  </div>
   </button>
   <div id="MainNavbar" class="menu w-100 d-flex flex-lg-row flex-column">
-    <ul class="principal navbar-nav w-100">
+    <ul class="principal navbar-nav w-100 mt-5 mt-lg-0">
 			<li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
 			<li class="nav-item"><a class="nav-link" href="#aulas">Aulas</a></li>
 			<li class="nav-item"><a class="nav-link" href="#midia">Mídia</a></li>
 			<li class="nav-item"><a class="nav-link" href="#precos">Preços</a></li>
     </ul>
-    <ul class="d-lg-none nav navbar-nav ml-auto w-100 justify-content-end">
+    <ul class="d-lg-none nav navbar-nav w-100 justify-content-end">
       <li class="nav-item">
-        <a class="nav-link" target="_blank" href="https://www.facebook.com/gilberto.peixoto.oliveira.junior">Facebook</a>
+				<a class="nav-link" href="https://www.facebook.com/gilberto.peixoto.oliveira.junior" target="_blank">Facebook</a>
     	</li>
       <li class="nav-item">
-        <a class="nav-link" target="_blank" href="https://soundcloud.com/user-247319229">Soundcloud</a>
-    	</li>          	
-    </ul>	        
-    <ul class="contato nav navbar-nav ml-auto w-100 justify-content-end text-center">
+				<a class="nav-link" href="https://www.instagram.com/gilbertopojunior" target="_blank">Instagram</a>				
+    	</li>     
+			<li class="nav-item">
+				<a class="nav-link" href="https://soundcloud.com/user-247319229" target="_blank">SoundCloud</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="https://www.mixcloud.com/gilbertojuniorpiano" target="_blank">Mixcloud</a>
+			</li>   	     	
+    </ul>         
+    <ul class="contato nav navbar-nav w-100 justify-content-end text-center">
       <li class="nav-item">
         <a class="nav-link" href="#contato"><span>Contato</span></a>
     	</li>
