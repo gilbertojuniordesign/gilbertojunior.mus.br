@@ -1,4 +1,4 @@
-<div id="inicio" class="container-fluid p-0 section-margin-bottom h-100">
+<div id="inicio" class="container-fluid p-0 h-100">
 	<div class="row h-100 justify-content-center feature m-0">	
 		<div class="col">
 			<div class="container">

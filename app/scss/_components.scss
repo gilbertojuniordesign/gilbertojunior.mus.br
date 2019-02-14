@@ -155,10 +155,10 @@ select:focus {
    			font-size: $font-size-base;
 			}
 			&:before {
-				content: "\f10d";			
+				content: "\0022";			
 			}
 			&:after {
-				content: "\f10e";
+				content: "\0022";
 			}
 		}
 	}

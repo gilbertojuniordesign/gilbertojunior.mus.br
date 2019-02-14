@@ -13,13 +13,13 @@
 			<div class="mr-md-5">
 				<h4>Telefone</h4>
 				<p>Ligue ou envie uma mensagem direto pelo WhatsApp!</p>
-				<p class="mb-5">
-					<a href="tel:+5511973332425" class="btn-yellow-line mr-2">
+				<p class="mb-5 text-center text-lg-left">
+					<a href="tel:+5511973332425" class="btn-yellow-line d-inline-block mr-lg-2 mb-2">
 						<span>
 							<i class="fas fa-mobile-alt"></i> 11 973332425
 						</span>
 					</a>					
-					<a href="https://goo.gl/y6HFxr" class="btn-yellow-line">
+					<a href="https://api.whatsapp.com/send?phone=5511973332425&text=Ol%C3%A1,+meu+amigo!" class="btn-yellow-line d-inline-block">
 						<span>
 							<i class="fab fa-whatsapp"></i> WhatsApp
 						</span>
@@ -97,7 +97,7 @@
 				<p>
 					<textarea name="mensagem" class="w-100" placeholder="Mensagem"><?php echo $mensagem;?></textarea>
 				</p>
-				<div class="flex-row d-flex">				
+				<div class="flex-row d-flex w-100" style="overflow: hidden;">				
 					<div class="g-recaptcha" data-sitekey="6LcNJnEUAAAAAI1fcViM6ZWuZF0AI2e4CEEU1zyG"></div>
 				</div>
 				<div class="flex-row d-flex mt-3">

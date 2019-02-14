@@ -4,10 +4,10 @@ section {
 		&::before { // âncoras
 		  display: block; 
 		  content: " "; 
-		  margin-top: -$spacer * 6; 
-		  height: $spacer * 6; 
+		  margin-top: -$spacer * 8; 
+		  height: $spacer * 8; 
 		  visibility: hidden; 
-		  pointer-events: none;
+		  pointer-events: none;  
 		}
 	}
  	@at-root
@@ -49,71 +49,71 @@ section {
 		}
 	} 	
 }
-.section-margin-bottom {
-	margin-bottom: $section-margin-bottom;
-}
 
 // Feature
-.feature {
-	background-image: url(../images/feature.jpg);
-	background-size: cover;
-	background-position: center;
-	display:flex;
-	align-items:center;	
-	border-bottom: $skyblue solid $border;
-	&::after {
-		background-image: linear-gradient(to bottom left,$blue,$black);
-		opacity: .7;
-	  height: calc(100% - .1rem);
-	  width: 100%;
-	  align-items: center;
-	  display: flex;
-	  position: absolute;
-	  top: 0;
-	  left: 0;
-	  content: "";
-		z-index: 1;	  
-	}	
-	header {
-		position: relative;
-	  h1 {
-		color: $skyblue;	
-		position: relative;
-		z-index: 2;
-	  }
-	  @include respond-to(upToMedium) {
-			h1 {
-				font-size: $font-size-xl;
-				font-weight: $font-weight-bold;
-				line-height: 1.4;
+#inicio {
+	margin-bottom: $spacer*4;
+	.feature {
+		background-image: url(../images/feature.jpg);
+		background-size: cover;
+		background-position: center;
+		display:flex;
+		align-items:center;	
+		border-bottom: $skyblue solid $border;
+		&::after {
+			background-image: linear-gradient(to bottom left,$blue,$black);
+			opacity: .8;
+		  height: calc(100% - .1rem);
+		  width: 100%;
+		  align-items: center;
+		  display: flex;
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  content: "";
+			z-index: 1;	  
+		}	
+		header {
+			position: relative;
+		  h1 {
+			color: $skyblue;	
+			position: relative;
+			z-index: 2;
+		  }
+		  @include respond-to(upToMedium) {
+				h1 {
+					font-size: $font-size-xl;
+					font-weight: $font-weight-bold;
+					line-height: 1.4;
+				}
 			}
 		}
-	}
-  .ico-scroll {
-  	font-size: $font-size-base*2;
-  	position: absolute;
-  	right: 50%;
-  	bottom: 0;
-  	margin-right: -25%;
-  	color: $skyblue;
-		transition: $transition1;
-		width: 50%;
-		height: $spacer*8;
-    opacity: 1;
-    visibility: visible;
-		position: absolute;
-		z-index: 2;    
-  	&:hover {
-  		bottom: $spacer;  		
-  		color: $yellow;
-  		transition: $transition2;
-  	}
-  	&.hidden {
+	  .ico-scroll {
+	  	font-size: $font-size-base*2;
+	  	position: absolute;
+	  	right: 50%;
+	  	bottom: 0;
+	  	margin-right: -25%;
+	  	color: $skyblue;
 			transition: $transition1;
-    	opacity: 0;
-    	visibility: hidden;
-  	}
-  }
+			width: 50%;
+			height: $spacer*8;
+	    opacity: 1;
+	    visibility: visible;
+			position: absolute;
+			z-index: 2;    
+	  	&:hover {
+	  		bottom: $spacer;  		
+	  		color: $yellow;
+	  		transition: $transition2;
+	  	}
+	  	&.hidden {
+				transition: $transition1;
+	    	opacity: 0;
+	    	visibility: hidden;
+	  	}
+	  }
+	}
 }
 // Destaque
 .destaque {

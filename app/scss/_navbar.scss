@@ -1,7 +1,6 @@
 /* Navbar*/
 .navbar {
-	@include respond-to(medium) {			
-		padding: $spacer;
+	@include respond-to(medium) {	
     position: fixed !important;
     top: 0;
     right: 0;
@@ -9,11 +8,19 @@
     z-index: 1030;		
 		&.scrollNavbar {
 		  background-color: rgba($skyblue, .95);
-			transition: $transition2;	
+			transition: $transition1;
+			.menu {
+				height: 3rem;
+				transition: $transition1;						
+			}
 		}
 		&.startNavbar {
 			background-color: transparent;
-			transition: $transition2;
+			transition: $transition1;
+			.menu {
+				height: 7rem;	
+				transition: $transition1;							
+			}			
 		}
 	}
 	@include respond-to(upToMedium) {
@@ -26,22 +33,33 @@
     z-index: 1030;			
 	}	
   .navbar-brand {
-			margin: 0;  	
-  		padding: 0;
 		@include respond-to(medium) {
-			width: 50%;
-			@at-root .scrollNavbar .navbar-brand svg {
-  			width: 100px;
-  			transition: $transition1;			
-  			path {						    		
-  				fill: $blue-gray;
+			width: 150px;
+			padding: 0;
+			margin: 0;
+			position: absolute;
+			@at-root .scrollNavbar .navbar-brand {
+				left: $spacer/2;
+				top: $spacer/2;	
+  			transition: $transition1;							
+				svg {
+	  			width: 100px;
+	  			transition: $transition1;			
+	  			path {						    		
+	  				fill: $blue-gray;
+	  			}
 				}
 			}
-			@at-root .startNavbar .navbar-brand svg {
-  			width: 150px;
-  			transition: $transition1;  			
-				path {
-    		fill: $skyblue;						
+			@at-root .startNavbar .navbar-brand {
+				left: $spacer*2;
+				top: $spacer*2;
+  			transition: $transition1;				
+				svg {
+	  			width: 150px;		
+	  			transition: $transition1;  			
+					path {
+	    		fill: $skyblue;						
+					}
 				}
 			}
 		}
@@ -77,14 +95,14 @@
 		}
 	}
 	.menu {
-		width:100%;
 		@include respond-to(upToMedium) {
 			background-color: darken($blue-gray, 5% );
 			height: 100vh;									
 			opacity: 0;
 			visibility: hidden;
+			position: fixed;				
 			top: 0;
-			position: fixed;	
+			padding-top: 3rem;
 			transition: $transition1;			
 			&.open {
 				width: 100%;
@@ -109,13 +127,9 @@
 					position: relative;
 					@at-root .startNavbar .nav-item {
 						font-size: $font-size-lg;
-						transition: $transition1;
-						transform-origin: 50% 50%;
 					}					
 					@at-root .scrollNavbar .nav-item {
 						font-size: $font-size-base;
-						transition: $transition1;
-						transform-origin: 50% 50%;									
 					}
 				}					
 				@include respond-to(upToMedium) {
@@ -134,73 +148,11 @@
 		    		}
 			    	@at-root .startNavbar .navbar-nav .nav-item .nav-link {
 							color: $skyblue;
-		    		}
-		    		// botão Contato
-			    	@at-root .navbar-nav.contato .nav-item {		    		
-							overflow: hidden;
-							display: inline-block;
-							position: relative;
-						}
-			    	@at-root .navbar-nav.contato .nav-item .nav-link {
-							border: $border*2 solid $yellow;
-							color: $yellow;
-				    	span {
-					    	color: $yellow;
-								transition: $transition1;					    	
-					    	position: relative;
-					    	z-index: 5;
-				    	}							
-							&:after {
-								content:" ";
-								position: absolute;
-								width: 1px;
-								left: 0;
-								right: 0;
-								top: 0;
-								bottom: 0;
-								z-index: 0;
-								transition: $transition1;
-					    	background-color: $yellow;
-								opacity: 0;
-								margin: auto;
-							}
-					    &:hover,
-					    &:focus {
-								opacity: 1 !important;
-					    	span {
-						    	color: $skyblue;
-									transition: $transition1;						    	
-					    	}
-								&:after {
-									opacity: 1;
-									transform: scaleX(200);					    	
-					    	}					    	
-							}
-							&.active {
-								-webkit-text-fill-color: inherit !important;								
-								&:before {
-								}
-							}
-						}		    		
+		    		}    		
 	    		}
 					@include respond-to(upToMedium) {
 						color: $skyblue;
 						padding: $spacer/4 $spacer;
-			    	@at-root .navbar-nav.contato .nav-item .nav-link {						
-							color: $blue-gray !important;
-							background-color: $yellow;
-							font-weight: $font-weight-bold;
-							padding: $spacer/2 0 !important;
-							&:hover {
-								opacity: 1 !important;
-								background-color: darken($yellow, 10%);
-							}
-							&.active {
-								&:before {
-									display: none !important;
-								}
-							}
-						}
 					}
 
 					// Hovering
@@ -217,6 +169,94 @@
 							opacity: 1 !important;
 						}
 					}					
+				}
+			}
+		}
+	}
+}
+
+
+// botão Contato
+@include respond-to(medium) {
+	.contato.navbar-nav {
+		position: absolute;
+		width: auto;
+		@at-root .startNavbar .contato.navbar-nav {
+			right: $spacer*2;
+			top: $spacer*2;
+			transition: $transition1;
+		}
+		@at-root .scrollNavbar .contato.navbar-nav {
+			right: $spacer/2;
+			top: $spacer/2;	
+			transition: $transition1;					
+		}
+		.nav-item {	    		
+		overflow: hidden;
+		display: inline-block;
+		position: relative;
+			.nav-link {
+				border: $border*2 solid $yellow;
+				color: $yellow;
+				span {
+			  	color: $yellow;
+			  	position: relative;
+			  	z-index: 5;
+				}							
+				&:after {
+					content:" ";
+					position: absolute;
+					width: 1px;
+					left: 0;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					z-index: 0;
+					transition: $transition1;
+			  	background-color: $yellow;
+					opacity: 0;
+					margin: auto;
+				}
+			  &:hover,
+			  &:focus {
+					opacity: 1 !important;
+			  	span {
+			    	color: $skyblue;
+						transition: $transition1;						    	
+			  	}
+					&:after {
+						opacity: 1;
+						transform: scaleX(200);					    	
+			  	}					    	
+				}
+				&.active {
+					-webkit-text-fill-color: inherit !important;								
+					&:before {
+					}
+				}
+			}
+		}
+	}
+}
+
+@include respond-to(upToMedium) {
+	.contato.navbar-nav {
+		width: 100%;
+		.nav-item {
+    	width: 50%;
+			.nav-link {						
+				color: $blue-gray !important;
+				background-color: $yellow;
+				font-weight: $font-weight-bold;
+				padding: $spacer/2 $spacer !important;
+				&:hover {
+					opacity: 1 !important;
+					background-color: darken($yellow, 10%);
+				}
+				&.active {
+					&:before {
+						display: none !important;
+					}
 				}
 			}
 		}

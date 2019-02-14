@@ -7,6 +7,21 @@ html,body {
 blockquote {
 	position: relative;
 	font-style: italic;
+	margin-bottom: $spacer*6 !important;
+	&:before {
+		position: absolute;
+		top: 0;
+		margin-top: -$spacer*2;
+		left: 50%;		
+		font-family: "Font Awesome 5 Free";
+		font-weight: 900;
+		font-size: $font-size-base;
+		color: $gray-light;
+		content: "\f10d";
+	}
+	small {
+		font-style: normal;
+	}
 }
 small {
 	line-height: 1.25 !important;

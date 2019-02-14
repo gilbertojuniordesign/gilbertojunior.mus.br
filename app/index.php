@@ -10,7 +10,9 @@
 		<?php include 'template-parts/section-sobre.php'; ?>
 		<hr>
 		<?php include 'template-parts/section-aulas.php'; ?>
+		<hr>
 		<?php include 'template-parts/section-depoimentos.php'; ?>
+		<hr>
 		<?php include 'template-parts/section-midia.php'; ?>
 		<hr>
 		<?php include 'template-parts/section-precos.php'; ?>
