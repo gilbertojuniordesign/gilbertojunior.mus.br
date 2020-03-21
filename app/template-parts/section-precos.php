@@ -4,6 +4,9 @@
 			<header>
 				<h2 class="text-center h2-section">Preços</h2>
 			</header>
+			<p>
+				Devido ao surto do Coronavirus e a necessidade de quarentena que todos estamos enfrentando neste momento, as aulas online (por vídeo-conferência) estarão com preço promocional por tempo inderterminado. Pela mesma razão, aulas presenciais estão temporariamente indisponíveis.
+			</p>
 			<div class="row subcat">
 				<div class="col-12 col-lg-4 mb-3">
 					<div class="p-5 text-center plano indisponivel">

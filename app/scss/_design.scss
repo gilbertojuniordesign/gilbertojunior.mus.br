@@ -80,32 +80,31 @@ section {
 			position: relative;
 			z-index: 2;
 		  }
-		  h1 {
-				  margin-bottom: $spacer*6;		  	
-		  	&:after {
-				  height: 0;
-				  width: 8rem;
-				  border-top: $border*2 solid $yellow;
-				  align-items: center;
-				  display: flex;
-				  position: absolute;
-				  bottom: -$spacer*3;
-				  left: calc(50% - 4rem);
-				  transform-origin: center;
-				  content: "";
-					z-index: 1;	 
-		  	}
-		  }
 		  @include respond-to(medium) {
 				h1 {
-					font-size: $font-size-xl*2;
+						margin-bottom: $spacer*6;			  		
+						font-size: $font-size-xl*2;
+			  		&:after {
+				  	border-top: $border*2 solid $yellow;	
+					  height: 0;
+					  width: 8rem;
+					  align-items: center;
+					  display: flex;
+					  position: absolute;
+					  bottom: -$spacer*3;
+					  left: calc(50% - 4rem);
+					  transform-origin: center;
+					  content: "";
+						z-index: 1;	 
+			  	}
 				}
 			}		  
 		  @include respond-to(upToMedium) {
 				h1 {
-					font-size: $font-size-xl;
+					font-size: $font-size-lg ;
 					font-weight: $font-weight-bold;
 					line-height: 1.4;
+					margin-top: $spacer*2;
 				}
 			}
 		}
@@ -118,7 +117,7 @@ section {
 	  	color: $skyblue;
 			transition: $transition1;
 			width: 50%;
-			height: $spacer*12;
+			height: 90vs;
 	    opacity: 1;
 	    visibility: visible;
 			position: absolute;
@@ -157,6 +156,7 @@ section {
 // Preços
 .plano {   
   transition: $transition1;
+
   &.disponivel {
 	  color: $blue-gray;
 		background: linear-gradient(to top left,$skyblue,$white); 
@@ -175,6 +175,9 @@ section {
   }
   p {
   	font-size: 100%;
+  }
+  p.preco {
+  	font-size:125%;
   }
 	@include respond-to(medium) {
 	  &.disponivel:hover, &.disponivel:focus, &.disponivel:active {

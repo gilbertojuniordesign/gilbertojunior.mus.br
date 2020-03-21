@@ -6,9 +6,8 @@
 					<div class="col">
 						<header class="text-center text-white">
 							<h1>Professor de piano e teclado em São&nbsp;Paulo</h1>
-							<p>Caro(a) visitante, devido ao surto do Coronavirus e a necessidade de quarentena que todos estamos enfrentando neste momento, informo que aulas online (por vídeo-conferência) estarão com  <strong>preço promocional</strong> por tempo inderterminado. Pela mesma razão, aulas presenciais estão temporariamente indisponíveis.
-							</p>		
-							<p><a class="btn-yellow-line" href="#precos">Saiba mais</a></p>				
+							<p>Aulas online com valor promocional!</p>		
+							<p class="mb-0"><a class="btn-yellow-line" href="#precos">Saiba mais</a></p>				
 						</header>
 					</div>
 				</div>

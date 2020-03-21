@@ -554,13 +554,15 @@
         #inicio .feature header h1, #inicio .feature header p {
           color: #e8ecff;
           position: relative;
-          z-index: 2; }
+          z-index: 2; } }
+      @media only screen and (min-width: 992px) {
         #inicio .feature header h1 {
-          margin-bottom: 6rem; }
+          margin-bottom: 6rem;
+          font-size: 3rem; }
           #inicio .feature header h1:after {
+            border-top: 0.2rem solid #f0a321;
             height: 0;
             width: 8rem;
-            border-top: 0.2rem solid #f0a321;
             -webkit-box-align: center;
             -ms-flex-align: center;
             align-items: center;
@@ -574,14 +576,12 @@
             transform-origin: center;
             content: "";
             z-index: 1; } }
-      @media only screen and (min-width: 992px) {
-        #inicio .feature header h1 {
-          font-size: 3rem; } }
       @media only screen and (max-width: 991px) {
         #inicio .feature header h1 {
-          font-size: 1.5rem;
+          font-size: 1.25rem;
           font-weight: 600;
-          line-height: 1.4; } }
+          line-height: 1.4;
+          margin-top: 2rem; } }
 
 @media screen {
       #inicio .feature .ico-scroll {
@@ -594,7 +594,7 @@
         -webkit-transition: 250ms linear all;
         transition: 250ms linear all;
         width: 50%;
-        height: 12rem;
+        height: 90vs;
         opacity: 1;
         visibility: visible;
         position: absolute;
@@ -643,7 +643,9 @@
         text-transform: initial;
         display: block; }
     .plano p {
-      font-size: 100%; } }
+      font-size: 100%; }
+    .plano p.preco {
+      font-size: 125%; } }
   @media only screen and (min-width: 992px) {
     .plano.disponivel:hover, .plano.disponivel:focus, .plano.disponivel:active {
       -webkit-transform-origin: center;
