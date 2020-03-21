@@ -34,7 +34,7 @@ gulp.task('watch', ['browserSync', 'sass'], function (){
 
 gulp.task('browserSync', function() {
     browserSync.init({
-        proxy: 'http://gilbertojunior.mus.br:8000' // utilizando virtual host no wamp
+        proxy: 'gilbertojunior.mus.br' // nome do virtual host criado no wamp
     });
 });
 

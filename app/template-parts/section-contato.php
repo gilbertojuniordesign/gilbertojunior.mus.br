@@ -27,7 +27,7 @@
 				</p>
 				<h4>Localização</h4>
 				<p>Artur Alvim, São Paulo.</p>
-				<h4>Regiões atendidas</h4>
+				<h4>Regiões atendidas em domicílio</h4>
 				<div id="accordion" class="mb-3">
 				  <div class="card">
 				    <div class="card-header" id="headingOne">
@@ -40,7 +40,7 @@
 
 				    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
 				      <div class="card-body">
-				        Artur Alvim, Belenzinho, Ermelino Matarazzo, Itaquera, Limoeiro, Mooca, Parque São Lucas, Patriarca, Penha, São Miguel, Tatuapé, Vila Matilde e Vila Ré.
+				        Ermelino Matarazzo, Itaquera, Artur Alvim, Patriarca, Vila Matilde, Penha, São Miguel, Tatuapé, Belém.
 				      </div>
 				    </div>
 				  </div>

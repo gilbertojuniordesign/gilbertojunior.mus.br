@@ -6,11 +6,14 @@
 					<div class="col">
 						<header class="text-center text-white">
 							<h1>Professor de piano e teclado em São&nbsp;Paulo</h1>
+							<p>Caro(a) visitante, devido ao surto do Coronavirus e a necessidade de quarentena que todos estamos enfrentando neste momento, informo que aulas online (por vídeo-conferência) estarão com  <strong>preço promocional</strong> por tempo inderterminado. Pela mesma razão, aulas presenciais estão temporariamente indisponíveis.
+							</p>		
+							<p><a class="btn-yellow-line" href="#precos">Saiba mais</a></p>				
 						</header>
 					</div>
 				</div>
 			</div>
 		</div>
-		<a href="#sobre" class="ico-scroll text-center"><i class="far fa-arrow-alt-circle-down"></i></a>		
+		<a href="#sobre" class="ico-scroll text-center"><i class="fas fa-angle-double-down"></i></a>		
 	</div>
 </div>

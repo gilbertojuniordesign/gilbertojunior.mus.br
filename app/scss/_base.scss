@@ -8,6 +8,12 @@ blockquote {
 	position: relative;
 	font-style: italic;
 	margin-bottom: $spacer*6 !important;
+	@include respond-to(upToMedium) {
+		padding: $spacer;
+	}
+	// @include respond-to(medium) {
+	// 	padding: $spacer*4;
+	// }	
 	&:before {
 		position: absolute;
 		top: 0;

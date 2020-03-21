@@ -176,11 +176,12 @@
 }
 
 
-// botão Contato
+// Bt Contato
 @include respond-to(medium) {
 	.contato.navbar-nav {
 		position: absolute;
-		width: auto;
+		width: 320px;
+		right: 0;
 		@at-root .startNavbar .contato.navbar-nav {
 			right: $spacer*2;
 			top: $spacer*2;
@@ -244,7 +245,7 @@
 		width: 100%;
 		.nav-item {
     	width: 50%;
-			.nav-link {						
+			.nav-link {
 				color: $blue-gray !important;
 				background-color: $yellow;
 				font-weight: $font-weight-bold;

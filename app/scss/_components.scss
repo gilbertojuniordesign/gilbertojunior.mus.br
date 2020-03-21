@@ -104,7 +104,7 @@ select:focus {
 		}								
 		&:before {
 			opacity: 1;
-			transform: scaleX(200);					    	
+			transform: scaleX(400);
 		}					    	
 	}
 	&:focus {
@@ -121,11 +121,18 @@ select:focus {
 	transition: $transition1;					    	
   &:hover,
   &:focus {
-		color: $blue-gray;
-		border-color: $blue-gray;
+		color: $gray-light;
+		border-color: $gray-light;
 	}
 }
-
+// Card
+.card {
+	.card-body {
+		@include respond-to(upToMedium) {
+			padding: $spacer;
+		}
+	}
+}
 // Carroussel
 .carousel {
 	.carousel-indicators {
@@ -202,5 +209,33 @@ select:focus {
 	    	}
 	    }	
 		}
+	}
+}
+
+// Image mask
+.mask-circle {
+	width: 16rem;
+	height: 16rem;
+	clip-path: circle(50%);
+}
+
+// Player
+#player {
+	height: 60px;
+	position: fixed;
+	right: 0;	
+	z-index: 100;
+}
+@include respond-to(medium) {
+	#player {
+		width: 320px;
+		bottom: .1rem;
+		right: .1rem;
+	}
+}
+@include respond-to(upToMedium) {
+	#player {
+		width: 100%;
+		bottom: 0;
 	}
 }

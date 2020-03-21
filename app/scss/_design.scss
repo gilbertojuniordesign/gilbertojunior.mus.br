@@ -40,7 +40,7 @@ section {
 		}		
 		.card-img-top {
 			max-width: 10rem;
-			min-height: 15rem;		
+			height: 15rem;		
 			@include respond-to(upToMedium) {
 				max-width: 8rem;
 				min-height: 12rem;
@@ -75,11 +75,32 @@ section {
 		}	
 		header {
 			position: relative;
-		  h1 {
+		  h1, p {
 			color: $skyblue;	
 			position: relative;
 			z-index: 2;
 		  }
+		  h1 {
+				  margin-bottom: $spacer*6;		  	
+		  	&:after {
+				  height: 0;
+				  width: 8rem;
+				  border-top: $border*2 solid $yellow;
+				  align-items: center;
+				  display: flex;
+				  position: absolute;
+				  bottom: -$spacer*3;
+				  left: calc(50% - 4rem);
+				  transform-origin: center;
+				  content: "";
+					z-index: 1;	 
+		  	}
+		  }
+		  @include respond-to(medium) {
+				h1 {
+					font-size: $font-size-xl*2;
+				}
+			}		  
 		  @include respond-to(upToMedium) {
 				h1 {
 					font-size: $font-size-xl;
@@ -97,7 +118,7 @@ section {
 	  	color: $skyblue;
 			transition: $transition1;
 			width: 50%;
-			height: $spacer*8;
+			height: $spacer*12;
 	    opacity: 1;
 	    visibility: visible;
 			position: absolute;
@@ -134,18 +155,32 @@ section {
 }
 
 // Preços
-.plano {
-  color: $blue-gray;
-	background: linear-gradient(to top left,$skyblue,$white);    
+.plano {   
   transition: $transition1;
+  &.disponivel {
+	  color: $blue-gray;
+		background: linear-gradient(to top left,$skyblue,$white); 
+  }
+  &.indisponivel {
+	  color: $gray;
+		background: linear-gradient(to top left,$gray-lighter,$white); 		  	
+  }
   h4 {
   	text-transform: uppercase;
+  	small {
+			font-size: 66%;
+	    text-transform: initial;
+	    display: block;
+  	}
   }
   p {
-  	font-size: 150%;
+  	font-size: 100%;
   }
-  &:hover, &:focus, &:active {
-		background: $skyblue;    
-  	transition: $transition1;
-  }
+	@include respond-to(medium) {
+	  &.disponivel:hover, &.disponivel:focus, &.disponivel:active {
+	    transform-origin: center;
+	    transform: scale(1.1);
+	    transition: $transition1;
+	  }
+	}
 }

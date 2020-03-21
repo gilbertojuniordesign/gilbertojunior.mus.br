@@ -37,7 +37,7 @@
 			<li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
 			<li class="nav-item"><a class="nav-link" href="#aulas">Aulas</a></li>
 			<li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>			
-			<li class="nav-item"><a class="nav-link" href="#midia">Mídia</a></li>
+			<!--<li class="nav-item"><a class="nav-link" href="#midia">Mídia</a></li> -->
 			<li class="nav-item"><a class="nav-link" href="#precos">Preços</a></li>
     </ul>
     <ul class="navbar-nav nav w-100 d-lg-none">
@@ -45,9 +45,11 @@
       <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/gilbertopojunior" target="_blank">Instagram</a></li>     
 			<li class="nav-item"><a class="nav-link" href="https://soundcloud.com/user-247319229" target="_blank">SoundCloud</a></li>
 			<li class="nav-item"><a class="nav-link" href="https://www.mixcloud.com/gilbertojuniorpiano" target="_blank">Mixcloud</a></li>   	     	
-    </ul>         
-    <ul class="contato navbar-nav nav text-center">
-      <li class="nav-item"><a class="nav-link" href="#contato"><span>Contato</span></a></li>
     </ul>
+    <ul class="contato nav navbar-nav justify-content-end text-center">
+      <li class="nav-item">
+        <a class="nav-link" href="#contato"><span>Agendar</span></a>
+    	</li>
+    </ul>    
   </div>
 </nav>
