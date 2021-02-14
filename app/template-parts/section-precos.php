@@ -3,37 +3,38 @@
 		<article class="col">
 			<header>
 				<h2 class="text-center h2-section">Preços</h2>
+				<p>Escolha o melhor plano de pagamento ou fique a vontade para <a href="#contato">fazer uma proposta</a>.
 			</header>
-			<p>
-				Devido ao surto do Coronavirus e a necessidade de quarentena que todos estamos enfrentando neste momento, as aulas online (por vídeo-conferência) estarão com preço promocional por tempo inderterminado. Pela mesma razão, aulas presenciais estão temporariamente indisponíveis.
-			</p>
 			<div class="row subcat">
 				<div class="col-12 col-lg-4 mb-3">
-					<div class="p-5 text-center plano indisponivel">
-						<h4>Aula presencial in loco<small class="mt-3">Temporariamente indisponível</small></h4>
-						<p class="m-0 preco"><strong>R$ 60 por aula</strong></p>
-						<p>4 aulas = R$ 240,00</p>
+					<div class="p-5 text-center plano disponivel">
+						<h4>Aula avulsa<small class="mt-3"></small></h4>
+						<p class="preco m-0"><strong>R$ 70,00</strong>
+						<small>Valor normal</small></p>
+						<p></p>
 					</div>					
 				</div>
 				<div class="col-12 col-lg-4 mb-3">
 					<div class="p-5 text-center plano disponivel">
-						<h4>Aula on-line por vídeo-chamada<small class="mt-3"><i class="far fa-star"></i> Valor promocional</small></h4>
-						<p class="m-0 preco"><strong>R$ 50 por aula</strong></p>
-						<p>4 aulas = R$ 200,00</p>
+						<h4>Pacote 4 aulas <span class="badge bg-green">-10%</span></h4>
+						<p class="mb-0"><s>R$ 280,00</s></p>
+						<p class="preco m-0"><strong>R$ 250,00</strong>
+						<small class="text-green">≅ R$ 63 por aula</small></p>
 					</div>
 				</div>					
 				<div class="col-12 col-lg-4 mb-3">
-					<div class="p-5 text-center plano indisponivel">
-						<h4>Aula presencial em domicílio<small class="mt-3">Temporariamente indisponível</small></h4>
-						<p class="m-0 preco"><strong>R$ 80 por aula</strong></p>
-						<p>4 aulas = R$ 320,00</p>
+					<div class="p-5 text-center plano disponivel">
+						<h4>Pacote 8 aulas <span class="badge bg-green">-20%</span></h4>
+						<p class="mb-0"><s>R$ 560,00</s></p>						
+						<p class="preco m-0"><strong>R$ 450,00</strong>
+						<small class="text-green">≅ R$ 56 por aula</small></p>
 					</div>
 				</div>					
 			</div>
 			<div class="row">
 				<div class="col text-center">
-					<p class="m-5"><strong>Gostaria de conhecer melhor?</strong></p>
-					<a class="btn btn-yellow" href="#contato"><span>Agende uma aula grátis!</span></a>
+					<p class="m-5"><strong>Vamos agendar uma aula?</strong></p>
+					<a class="btn btn-yellow" href="#contato"><span>Entre em contato</span></a>
 				</div>
 			</div>
 		</article>

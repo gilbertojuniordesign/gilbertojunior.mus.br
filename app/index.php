@@ -7,7 +7,7 @@
 	<body data-spy="scroll" data-target=".navbar" data-offset="200">
 		<?php include 'template-parts/navbar.php'; ?>
 		<?php include 'template-parts/feature.php'; ?>
-		<?php include 'template-parts/player.php'; ?>		
+		<?php // include 'template-parts/player.php'; ?>		
 		<?php include 'template-parts/section-sobre.php'; ?>
 		<hr>
 		<?php include 'template-parts/section-aulas.php'; ?>

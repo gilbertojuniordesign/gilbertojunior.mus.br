@@ -35,20 +35,20 @@
   <div id="MainNavbar" class="menu w-100 d-flex flex-lg-row flex-column align-items-center">
     <ul class="navbar-nav nav w-100">
 			<li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-			<li class="nav-item"><a class="nav-link" href="#aulas">Aulas</a></li>
+			<li class="nav-item"><a class="nav-link" href="#aulas">Cursos</a></li>
 			<li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>			
 			<!--<li class="nav-item"><a class="nav-link" href="#midia">Mídia</a></li> -->
 			<li class="nav-item"><a class="nav-link" href="#precos">Preços</a></li>
     </ul>
     <ul class="navbar-nav nav w-100 d-lg-none">
-      <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/gilberto.peixoto.oliveira.junior" target="_blank">Facebook</a></li>
-      <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/gilbertopojunior" target="_blank">Instagram</a></li>     
-			<li class="nav-item"><a class="nav-link" href="https://soundcloud.com/user-247319229" target="_blank">SoundCloud</a></li>
-			<li class="nav-item"><a class="nav-link" href="https://www.mixcloud.com/gilbertojuniorpiano" target="_blank">Mixcloud</a></li>   	     	
+      <li class="nav-item"><a class="nav-link text-gray-light" href="https://www.instagram.com/gilbertopojunior">Instagram</a></li> 
+			<li class="nav-item"><a class="nav-link text-gray-light" href="https://www.mixcloud.com/gilbertojuniorpiano">Mixcloud</a></li>   	     	          
+			<li class="nav-item"><a class="nav-link text-gray-light" href="https://soundcloud.com/user-247319229">SoundCloud</a></li>
+      <li class="nav-item"><a class="nav-link text-gray-light" href="https://www.youtube.com/channel/UCKV7tTGHQl2DPmiXdVOtI1A/featured" title="YouTube">YouTube</a></li>			
     </ul>
     <ul class="contato nav navbar-nav justify-content-end text-center">
       <li class="nav-item">
-        <a class="nav-link" href="#contato"><span>Agendar</span></a>
+        <a class="nav-link" href="#contato"><span>Contato</span></a>
     	</li>
     </ul>    
   </div>

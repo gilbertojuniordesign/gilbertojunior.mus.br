@@ -1,12 +1,12 @@
 <?php
-$title = 'Gilberto Junior Professor de Piano e Teclado';
-$key = 'aulas, professor, piano, pianista, teclado, domicílio, remoto';
-$desc = 'Aulas particulares de piano, teclado e iniciação musical em São Paulo ou remoto. Primeira aula grátis!';
+$title = 'Gilberto Junior - Pianista e professor de piano e teclado';
+$key = 'aulas, professor, piano, pianista, teclado, online, remoto, eventos';
+$desc = 'Aulas de piano, teclado e iniciação musical. Aulas individuais online com a primeira grátis!';
 $img = 'https://www.gilbertojunior.mus.br/images/feature.jpg'
 ?>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Gilberto Junior Professor de Piano e Teclado</title>
+<title>Gilberto Junior - Pianista e professor de piano e teclado</title>
 
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
 <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">

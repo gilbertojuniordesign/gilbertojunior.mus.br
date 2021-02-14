@@ -12,17 +12,20 @@ h1, h2, h3 {
 h4, h5, h6 {
 	font-weight: $font-weight-bold;
 }
+
+// Cores
 .text-blue {
 	color: $blue !important;
 }
 .text-skyblue {
 	color: $skyblue  !important;
 }
-
+.text-green {
+	color: $green  !important;
+}
 .text-yellow {
 	color: $yellow  !important;
 }
-
 .text-black {
 	color: $black  !important;
 }
@@ -31,4 +34,67 @@ h4, h5, h6 {
 }
 .text-white {
 	color: $white  !important;
+}
+.text-gray-dark {
+	color: $gray-dark !important;
+}
+.text-gray {
+	color: $gray !important;
+}
+.text-gray-light {
+	color: $gray-light !important;
+}
+.text-gray-lighter {
+	color: $gray-lighter !important;
+}
+.text-gray-lightest {
+	color: $gray-lightest !important;
+}
+
+
+// BGs
+
+.bg-gray-dark {
+	color: $white;
+	background-color: $gray-dark !important;	
+}
+.bg-gray {
+	color: $white;	
+	background-color: $gray !important;	
+}
+.bg-gray-light {
+	color: $white;	
+	background-color: $gray-light !important;
+}
+.bg-gray-lighter {
+	color: $white;	
+	background-color: $gray-lighter !important;
+}
+.bg-gray-lightest {
+	color: $blue-gray;	
+	background-color: $gray-lightest !important;
+}
+.bg-blue-gray {
+	color: $white;
+	background-color: $blue-gray !important;
+}
+.bg-blue {
+	color: $white;
+	background-color: $blue !important;
+}
+.bg-skyblue {
+	color: $blue-gray;
+	background-color: $skyblue !important;
+}
+.bg-green {
+	color: $white;
+	background-color: $green !important;
+}
+.bg-yellow {
+	color: $white;
+	background-color: $yellow !important;
+}
+.bg-red {
+	color: $white;
+	background-color: $red !important;
 }

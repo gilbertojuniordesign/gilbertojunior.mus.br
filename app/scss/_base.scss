@@ -5,26 +5,13 @@ html,body {
   color: $blue-gray;
 }
 blockquote {
-	position: relative;
-	font-style: italic;
-	margin-bottom: $spacer*6 !important;
-	@include respond-to(upToMedium) {
-		padding: $spacer;
-	}
-	// @include respond-to(medium) {
-	// 	padding: $spacer*4;
-	// }	
-	&:before {
-		position: absolute;
-		top: 0;
-		margin-top: -$spacer*2;
-		left: 50%;		
-		font-family: "Font Awesome 5 Free";
-		font-weight: 900;
-		font-size: $font-size-base;
-		color: $gray-light;
-		content: "\f10d";
-	}
+	color: $gray-dark;
+	font-size: 90%;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;  	
 	small {
 		font-style: normal;
 	}

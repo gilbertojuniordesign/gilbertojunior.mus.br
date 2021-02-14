@@ -95,7 +95,22 @@ AOS.init({
 
 });
 
-// Recaptcha 
- function onSubmit(token) {
-   document.getElementById("form").submit();
- }
+/*
+  Load more content with jQuery - May 21, 2013
+  (c) 2013 @ElmahdiMahmoud
+*/   
+
+$(function () {
+    $(".depo").slice(0, 4).show();
+    $(".loadMore").on('click', function (e) {
+        e.preventDefault();
+        $(".depo:hidden").slice(0, 4).slideDown();
+        if ($(".depo:hidden").length == 0) {
+            $("#load").fadeOut('slow');
+        }
+        $('.depo').animate({
+            scrollTop: $(this).offset().top
+        }, 1500);
+    });
+});
+

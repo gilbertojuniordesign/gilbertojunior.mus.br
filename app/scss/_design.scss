@@ -1,3 +1,37 @@
+// Borders
+.borda {
+	border: solid $skyblue $border*2 !important;
+}
+.borda-topo {
+	border-top: solid $skyblue $border*2 !important;
+}
+.borda-direita {
+	border-right: solid $skyblue $border*2 !important;
+}
+.borda-base {
+	border-bottom: solid $skyblue $border*2 !important;
+}
+.borda-esquerda {
+	border-left: solid $skyblue $border*2 !important;
+}
+		@include respond-to(upToMedium) {
+		.borda-topo-sm {
+			border-top: solid $skyblue $border*2 !important;
+		}
+		.borda-direita-sm {
+			border-right: solid $skyblue $border*2 !important;
+		}
+		.borda-base-sm {
+			border-bottom: solid $skyblue $border*2 !important;
+		}
+		.borda-esquerda-sm {
+			border-left: solid $skyblue $border*2 !important;
+		}
+	}
+.border-radius-5 {
+	border-radius: $border-radius-5;	
+}
+
 // Sections
 section {
 	@include respond-to(medium) {	
@@ -32,22 +66,34 @@ section {
 	.card {
 		border: 0;
 		border-radius: 0;
-		@include respond-to(upToMedium) {
-			border-bottom: $border $skyblue solid;
-			&:last-child {
+			.card-header {
+				background: none !important;
 				border: 0;
-			}
-		}		
-		.card-img-top {
-			max-width: 10rem;
-			height: 15rem;		
-			@include respond-to(upToMedium) {
-				max-width: 8rem;
-				min-height: 12rem;
-				margin: 0;
+					h1, h2, h3, h4, h5, h6 {
+						font-weight: $font-weight-bold;
+					}
+			}		
+			.card-body {		
+			}	
+			.card-text {	
+				font-size: 90%;	
+			}				
+			.card-img-top {
+				max-width: 10rem;
+				height: 15rem;		
+				@include respond-to(upToMedium) {
+					max-width: 8rem;
+					min-height: 12rem;
+					margin: 0;
 			}
 		}
-	} 	
+	}
+	.depo {
+		display: none;
+	}
+	.loadmore {
+		transition: $transition1;
+	}
 }
 
 // Feature
@@ -83,7 +129,7 @@ section {
 		  @include respond-to(medium) {
 				h1 {
 						margin-bottom: $spacer*6;			  		
-						font-size: $font-size-xl*2;
+						font-size: $font-size-xl*1.5;
 			  		&:after {
 				  	border-top: $border*2 solid $yellow;	
 					  height: 0;
@@ -101,7 +147,7 @@ section {
 			}		  
 		  @include respond-to(upToMedium) {
 				h1 {
-					font-size: $font-size-lg ;
+					font-size: $font-size-lg;
 					font-weight: $font-weight-bold;
 					line-height: 1.4;
 					margin-top: $spacer*2;
@@ -155,9 +201,12 @@ section {
 
 // Preços
 .plano {   
-  transition: $transition1;
+	@include respond-to(medium) {	
+  	min-height: 18rem;
+  } 
 
   &.disponivel {
+  	border: $border*2 $skyblue solid;
 	  color: $blue-gray;
 		background: linear-gradient(to top left,$skyblue,$white); 
   }
@@ -166,7 +215,7 @@ section {
 		background: linear-gradient(to top left,$gray-lighter,$white); 		  	
   }
   h4 {
-  	text-transform: uppercase;
+  	text-transform: normal;
   	small {
 			font-size: 66%;
 	    text-transform: initial;
@@ -175,15 +224,49 @@ section {
   }
   p {
   	font-size: 100%;
+  	small {
+			font-size: 66%;
+	    text-transform: initial;
+	    display: block;
+  	}  	
   }
   p.preco {
-  	font-size:125%;
+  	font-size:150%;
+  	.badge {
+  		background-color:$green;
+  	}
   }
 	@include respond-to(medium) {
 	  &.disponivel:hover, &.disponivel:focus, &.disponivel:active {
-	    transform-origin: center;
-	    transform: scale(1.1);
-	    transition: $transition1;
+			background: linear-gradient(to bottom right,$skyblue,$white); 
 	  }
+	}
+}
+
+// Image mask
+.mask-circle {
+	width: 16rem;
+	height: 16rem;
+	clip-path: circle(50%);
+}
+
+// Player
+#player {
+	height: 60px;
+	position: fixed;
+	right: 0;	
+	z-index: 100;
+}
+@include respond-to(medium) {
+	#player {
+		width: 320px;
+		bottom: .1rem;
+		right: .1rem;
+	}
+}
+@include respond-to(upToMedium) {
+	#player {
+		width: 100%;
+		bottom: 0;
 	}
 }

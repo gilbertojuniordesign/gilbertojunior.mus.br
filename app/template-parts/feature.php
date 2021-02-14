@@ -5,9 +5,9 @@
 				<div class="row>">
 					<div class="col">
 						<header class="text-center text-white">
-							<h1>Professor de piano e teclado em São&nbsp;Paulo</h1>
-							<p>Aulas online com valor promocional!</p>		
-							<p class="mb-0"><a class="btn-yellow-line" href="#precos">Saiba mais</a></p>				
+							<h1>Pianista e professor de piano e teclado <br> para todas as idades</h1>
+							<p>Realize seu sonho em aprender piano ou teclado com preços promocionais!</p>		
+							<p class="mb-0"><a class="btn-line-yellow" href="#precos">Saiba mais</a></p>				
 						</header>
 					</div>
 				</div>

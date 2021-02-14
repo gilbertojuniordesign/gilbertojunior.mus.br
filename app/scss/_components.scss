@@ -111,28 +111,39 @@ select:focus {
 		box-shadow: none !important;
 	}
 }
-
-.btn-yellow-line {
-	border: $border solid $yellow;
+.btn-line {
+	border: $border*2 solid $blue;
+	border-radius: $border-radius-5;
+	color: $blue;
+	font-weight: $font-weight-bold;	
+	padding: $spacer/2 $spacer;
+	transition: $transition1;					    	
+  &:hover {
+		color: $gray-light;
+		border-color: $gray-light;
+	}
+	&:focus	{
+		color: $gray-light;
+		border-color: $gray-light;		
+	}	
+}
+.btn-line-yellow {
+	border: $border*2 solid $yellow;
 	border-radius: $border-radius-5;
 	color: $yellow;
 	font-weight: $font-weight-bold;	
 	padding: $spacer/2 $spacer;
 	transition: $transition1;					    	
-  &:hover,
-  &:focus {
+  &:hover {
 		color: $gray-light;
 		border-color: $gray-light;
 	}
-}
-// Card
-.card {
-	.card-body {
-		@include respond-to(upToMedium) {
-			padding: $spacer;
-		}
+	&:focus	{
+		color: $yellow;
+		border-color: $yellow;		
 	}
 }
+
 // Carroussel
 .carousel {
 	.carousel-indicators {
@@ -209,33 +220,5 @@ select:focus {
 	    	}
 	    }	
 		}
-	}
-}
-
-// Image mask
-.mask-circle {
-	width: 16rem;
-	height: 16rem;
-	clip-path: circle(50%);
-}
-
-// Player
-#player {
-	height: 60px;
-	position: fixed;
-	right: 0;	
-	z-index: 100;
-}
-@include respond-to(medium) {
-	#player {
-		width: 320px;
-		bottom: .1rem;
-		right: .1rem;
-	}
-}
-@include respond-to(upToMedium) {
-	#player {
-		width: 100%;
-		bottom: 0;
 	}
 }

@@ -244,7 +244,7 @@
 	.contato.navbar-nav {
 		width: 100%;
 		.nav-item {
-    	width: 50%;
+    	max-width: 50%;
 			.nav-link {
 				color: $blue-gray !important;
 				background-color: $yellow;
